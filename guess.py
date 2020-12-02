@@ -6,7 +6,7 @@ snum = random.randint(1,51)
 
 def guess():
   for x in range(8):
-    guess = int(input("Enter your guess.."))
+    guess = int(float(input("Enter your guess..")))
     if guess < snum:
       print("Your guess is too low.")
     elif guess > snum:
@@ -15,7 +15,7 @@ def guess():
       break
   
   if guess == snum:
-    print("Noice!, your guessed my number in {} guesses!".format(x))
+    print("Noice!, you're guessed my number in {} guesses!".format(x))
   else:
     print("Nope. It was {}".format(snum))
 
